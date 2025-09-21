@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { makeClient } from "@/lib/apollo";
+import { makeClient } from "@/lib/apollo.client";
 import { GET_POKEMON_BY_NAME } from "@/lib/queries";
 import type { Pokemon } from "@/types/pokemon";
 import PokemonCardView from "./PokemonCardView";

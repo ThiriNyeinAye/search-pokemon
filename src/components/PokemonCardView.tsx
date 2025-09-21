@@ -65,8 +65,8 @@ export default function PokemonCardView({
             {p.name} <span className="text-neutral-400">#{p.number}</span>
             <button
               onClick={() => dispatch(toggleFavorite(p.name))}
-              className="ml-1 text-yellow-400 hover:scale-110 transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 rounded"
-              title="Toggle favorite"
+              className="ml-1 text-yellow-400 hover:scale-110 transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 rounded cursor-pointer"
+              title="Make it favorite!"
               aria-label={isFav ? "Unfavorite" : "Favorite"}
             >
               {isFav ? "★" : "☆"}
@@ -248,12 +248,15 @@ function EvolutionChip({
         aria-label={`Show ${evo.name}`}
       >
         {evo.image ? (
-          <img
+          <Image
             src={evo.image}
             alt={evo.name}
             width={36}
             height={36}
             className="rounded-md bg-neutral-950 ring-1 ring-neutral-800"
+            sizes="36px"
+            priority
+            style={{ height: "36px", width: "36px" }}
           />
         ) : (
           <div className="w-9 h-9 rounded-md bg-neutral-800" />

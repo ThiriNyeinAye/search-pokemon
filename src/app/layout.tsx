@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ApolloWrapper } from "@/lib/apollo";
+import { ApolloWrapper } from "@/lib/apollo.client";
 import Providers from "@/state/Providers";
 import "./globals.css";
 

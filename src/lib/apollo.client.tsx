@@ -17,7 +17,7 @@ export const makeClient = () =>
     }),
   });
 
-export const ApolloWrapper = ({ children }: { children: ReactNode }) => {
+export function ApolloWrapper({ children }: { children: ReactNode }) {
   const client = makeClient();
   return <ApolloProvider client={client}>{children}</ApolloProvider>;
-};
+}

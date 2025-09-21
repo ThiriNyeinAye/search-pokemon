@@ -1,19 +1,19 @@
 import { PokemonCard } from "@/components/PokemonCard";
-import { makeClient } from "@/lib/apollo";
+import { makeServerClient } from "@/lib/apollo.server";
 import { GET_POKEMON_BY_NAME } from "@/lib/queries";
 
 export async function generateStaticParams() {
   return ["bulbasaur", "charmander", "squirtle"].map((name) => ({ name }));
 }
 
-export const revalidate = 86400; // ISR: revalidate once a day
+export const revalidate = 86400; // ISR
 
 export default async function PokemonPage({
   params,
 }: {
   params: { name: string };
 }) {
-  const client = makeClient();
+  const client = makeServerClient();
   await client.query({
     query: GET_POKEMON_BY_NAME,
     variables: { name: params.name },

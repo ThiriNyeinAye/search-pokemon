@@ -83,7 +83,7 @@ export default function SearchInput() {
                bg-[#1b1c1f] text-purple-300 font-semibold
                hover:text-purple-100 hover:shadow-[0_0_14px_-6px_rgba(168,85,247,.7)]
                active:scale-[0.98] transition
-               focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/60"
+               focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/60 cursor-pointer"
           >
             <span>Search</span>
             <svg
@@ -114,7 +114,7 @@ export default function SearchInput() {
             <button
               key={term}
               onClick={() => router.push(`/?q=${encodeURIComponent(term)}`)}
-              className="text-xs rounded-full px-3 py-1 bg-neutral-800 hover:bg-neutral-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 whitespace-nowrap"
+              className="text-xs rounded-full px-3 py-1 bg-neutral-800 hover:bg-neutral-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 whitespace-nowrap cursor-pointer"
               type="button"
             >
               {term}
