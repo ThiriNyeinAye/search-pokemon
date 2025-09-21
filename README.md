@@ -2,6 +2,10 @@
 
 A **Next.js 14 + TypeScript** application that lets you explore for Pokémon using a **GraphQL API**.
 
+## Project Preview
+
+
+
 ## 🚀 Features
 
 - **Pokémon Search**
@@ -33,15 +37,15 @@ A **Next.js 14 + TypeScript** application that lets you explore for Pokémon usi
 
 ## 🛠️ Tech Stack
 
-- [Next.js 14](https://nextjs.org/) (App Router)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Apollo Client](https://www.apollographql.com/docs/react/)
-- [GraphQL Pokémon API](https://graphql-pokemon2.vercel.app/)
-- [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [Jest](https://jestjs.io/) for unit tests
+- **Framework:** Next.js 15
+- **Language:** TypeScript  
+- **Data Layer:** Apollo Client + GraphQL Pokémon API
+- **Package Manager:** PNPM
+- **Form Handling:** React Hook Form + Zod  
+- **State Management:** Redux Toolkit  
+- **Styling & Animations:** TailwindCSS + Framer Motion  
+- **Testing:** Jest  
+- **Deployment:** Vercel
 
 ---
 
@@ -53,3 +57,7 @@ Clone the repo:
 git clone https://github.com/ThiriNyeinAye/search-pokemon.git
 cd search-pokemon
 ```
+## 🌐 Deployment
+
+This project is deployed on **Vercel**.  
+👉 [Live Demo](https://my-search-pokemon-one.vercel.app/)
