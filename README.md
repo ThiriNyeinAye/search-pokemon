@@ -4,7 +4,11 @@ A **Next.js 14 + TypeScript** application that lets you explore for Pokémon usi
 
 ## Project Preview
 
-
+<img
+  style="width: 480px; height: 100%"
+  src="https://github.com/ThiriNyeinAye/search-pokemon/blob/main/public/assets/preview.gif"
+  alt="Meta Project"
+/>
 
 ## 🚀 Features
 
@@ -49,15 +53,38 @@ A **Next.js 14 + TypeScript** application that lets you explore for Pokémon usi
 
 ---
 
-## 📦 Getting Started
+## Installation and Setup
 
-Clone the repo:
+1.  **Clone the Repository:**
 
 ```bash
 git clone https://github.com/ThiriNyeinAye/search-pokemon.git
 cd search-pokemon
 ```
+
+2.  **Install Dependencies:**
+
+```bash
+pnpm install
+```
+
+3.  **Start the Development Server:**
+
+```bash
+pnpm dev
+```
+
+4.  **View the Application:**
+    Open your browser and visit:
+
+```
+http://localhost:3000
+```
+
+---
+
 ## 🌐 Deployment
 
 This project is deployed on **Vercel**.  
 👉 [Live Demo](https://my-search-pokemon-one.vercel.app/)
+
