@@ -83,6 +83,13 @@ http://localhost:3000
 
 ---
 
+## 🌙 Theme Support
+
+This project was originally designed and optimized for **Dark Mode** 🌑  
+At this stage, the UI/UX is built to be consistent and accessible when viewed in Dark Mode.
+
+---
+
 ## 🌐 Deployment
 
 This project is deployed on **Vercel**.  
